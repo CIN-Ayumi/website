@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <title>Casteria</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <!--サブコンポーネント-->
+        <div class="container-fluid">
+          <!--ブランド-->
+          <h1><a href="#" class="navbar-brand fs-2 fw-bold ms-lg-4 ms-2">Casteria</a></h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#hamburgerContents" aria-controls="hamburgerContents" aria-expanded="false"
+            aria-label="navbar-expand-lg">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="hamburgerContents">
+            <ul class="navbar-nav ms-auto me-3">
+              <li class="mb-lg-0 mb-4 mt-lg-0 mt-3"><a href="#" class="text-black me-4">Home</a></li>
+              <li class="mb-lg-0 mb-4"><a href="#" class="text-secondary me-4">Food</a></li>
+              <li class="mb-lg-0 mb-4"><a href="#" class="text-secondary me-4">Drink</a></li>
+              <li class="mb-lg-0 mb-4"><a href="#" class="text-secondary me-4">お問い合わせ</a></li>
+            </ul>
+            <form class="row gx-2 my-2 my-lg-0">
+              <input type="search" name="q" placeholder="Search">
+              <input type="submit" value="検索">
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/restaurant.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/food.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/food2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/restaurant2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/food4.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </header> 
+    <main>
+      <section id="sec_1" class="mb-5">
+        <div class="container">
+          <h2 class="text-lg-center">新型コロナウイルスに対する取り組みの最新情報をご案内</h2>
+          <!----- アコーディオンメニュー ------>
+          <div class="accordion accordion-flush" id="accordion">
+            <!-- アコーディオンヘッダー01 -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingOne">
+                <h3 class="mb-0">
+                  <button class="accordion-button text-black fs-4 ps-2 py-3 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+                      <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+                    </svg>
+                    衛生面に関して
+                  </button>
+                </h3>
+              </div>
+              <!-- アコーディオンコンテンツ01 -->
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                  <ul class="fs-5 ps-0">
+                    <li>マスクを着用しての接客</li>
+                    <li>出勤前の検温の徹底</li>
+                    <li>レジカウンターやドリンク受け渡し口等への飛沫防止ガードの設置</li>
+                    <li>より頻度の高い手洗いの励行</li>
+                    <li>テーブルにお客様の消毒用アルコールの設置</li>
+                    <li>従業員間の距離確保のため、休憩や研修時の客席利用</li>
+                  </ul>      
+                </div>
+              </div>
+            </div>  
+            <!-- アコーディオンヘッダー02 -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingTwo">
+                <h3 class="mb-0">
+                  <button class="accordion-button text-black fs-4 ps-2 py-3 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                    <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+                      <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+                    </svg>
+                    お客様へのご協力のお願い
+                  </button>
+                </h3>
+              </div>
+              <!-- アコーディオンコンテンツ02 -->
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                <div class="accordion-body fs-5">
+                  <ul class="ps-0">
+                    <li>店内では、飲食時以外のマスク着用をお願い致します</li>
+                    <li>入店時の手指の消毒にご協力ください</li>
+                    <li>レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</li>
+                    <li>多数でお越しの際は、お1人がまとめてご注文願います（混雑時に入場制限をする場合がございます）</li>
+                    <li>発熱や体調不良の際はご入店をお控えください</li>
+                  </ul>
+                </div>
+              </div>
+            </div>              
+            <!-- アコーディオンヘッダー03 -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingThree">
+                <h3 class="mb-0">
+                  <button class="accordion-button text-black fs-4 ps-2 py-3 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                    <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+                      <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+                    </svg>
+                    サービスに関して
+                  </button>
+                </h3>
+              </div>
+              <!-- アコーディオンコンテンツ03 -->
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                <div class="accordion-body fs-5">
+                  <ul class="ps-0">
+                    <li>直接お渡しする商品の提供、金銭授受時にグローブの着用</li>
+                    <li>ドリンクやフードのサンプリング中止</li>
+                    <li>地域活動・イベントの中止</li>
+                    <li>混雑時間帯の客席の譲り合いへのご協力お願いの実施</li>
+                    <li>店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</li>
+                    <li>混雑状況に応じたドライブスルーサービスの一時休止や店内客席利用の制限</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>  
+      </section>
+        <!--　紹介　-->
+        <div class="wrapper">
+        <section id="sec_2" class="mb-5">
+          <div class="container">
+            <div class="fadeInTrigger">
+              <h4 class="mt-5 mb-4 fs-2 fw-semibold">Signature Food</h4>
+              <div class="row">
+                <img class="col-lg-6" src="img/food.jpg">
+                <p class="col-lg-6 fs-5 p-lg-5 ">サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンの美味しさを引き立てる２種類のソースも絶品です！</p>
+              </div>
+            </div>
+            <div class="fadeInTrigger">
+              <h4 class="mt-5 mb-4 fs-2 fw-semibold">Our Coffee</h4>
+              <div class="row">
+                <img class="col-lg-6" src="img/barista.jpg">
+                <p class="col-lg-6 fs-5 p-lg-5">当店のコーヒー豆が厳選して世界中から買い付けています。そして、そのコーヒー豆のおいしさを最大限に引き出すために自社のロースタリーで焙煎しています。</p>
+              </div>
+            </div>
+            <div class="fadeInTrigger">
+              <h4 class="mt-5 mb-4 fs-2 fw-semibold">Our Food</h4>
+              <div class="row">
+                <img class="col-lg-6" src="img/food3.jpg">
+                <p class="col-lg-6 fs-5 p-lg-5">当店は何よりまずは衛生管理に気をつけています。「安心・安全」をお届けするために日々継続的な努力を惜しみません。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+          <!-- 店鋪情報 -->
+        <section id="sec_3" class="mb-5 fadeInTrigger">
+          <div class="container py-lg-5 px-lg-4 pb-0 pt-3 px-0 bg-black text-white">
+            <div class="row">
+              <div class="col-lg-6 col">
+                <h4 class="fw-semibold mb-4 ms-3">Address</h4>
+                <p class="mb-4">681 xxxx Drive, xxxxx xxxx #01 - 06 000000</p>
+                <p class="mb-5">Opening Hours</p>
+                <h4 class="fw-semibold mb-4 ms-3">Mondays - Friday: 10am - 9pm</h4>
+                <p>Saturdays, Sundays & Public Holidays: 9am - 9pm</p>
+              </div>
+              <img class="col-lg-6 col" src="img/barista.jpg">
+            </div>
+          </div>
+        </section>
+          <!-- 店鋪一覧 -->
+        <section id="sec_4" class="mb-5 fadeInTrigger">
+          <div class="container">
+            <div class="row text-center">
+              <h4>店舗一覧</h4>
+            </div>
+            <div class="row my-5">
+              <div class="col">
+                <img src="img/restaurant2.jpg" alt="店舗の画像" class="m-auto shopImg">
+                <div class="d-flex justify-content-center mt-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                  <p>東京都渋谷区xxxxx xxxxx</p>
+                </div>
+              </div>
+              <div class="col">
+                <img src="img/restaurant3.jpg" alt="店舗の画像" class="m-auto shopImg">
+                <div class="d-flex justify-content-center mt-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                  <p>千葉県松戸市xxxxx xxxxx</p>
+                </div>
+              </div>
+              <div class="col">
+                <img src="img/restaurant4.jpg" alt="店舗の画像" class="m-auto shopImg">
+                <div class="d-flex justify-content-center mt-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                  <p>神奈川県横浜市xxxxx xxxxx</p>         
+                </div>
+              </div>
+              <div class="col">
+                <img src="img/restaurant5.jpg" alt="店鋪の画像" class="m-auto shopImg">
+                <div class="d-flex justify-content-center mt-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                  <p>埼玉県川越市xxxxx xxxxx</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- フッター -->
+    <footer class="py-3">
+      <div class="container text-center">
+        <ul class="nav justify-content-center mb-3">
+          <li class="nav-item">
+            <a class="nav-link text-black px-0" href="#">プライバシーポリシー</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black px-2 px-lg-4" href="#">お問い合わせ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black px-0" href="#">運営会社</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
